@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+# Spring MVC actuator endpoints available via /admin/info, /admin/health, ...
+server.servlet-path: /
+management:
+  context-path: /admin
+  security:
+    enabled: false
+
+endpoints:
+  enabled: false
+  info:
+    enabled: true
+  health:
+    enabled: true
+  beans:
+    enabled: true
+
+togglz:
+#  enabled: true # Enabled by default
+#  featureEnums:
+#    FeatureToggles
+  features:
+    TEXT_BASED_SEARCH_VIA_ELASTIC_SEARCH:
+      enabled: true
+    CONTENT_RETRIEVAL_VIA_CMS:
+      enabled: false
+    USE_NEW_SOMESERVICE:
+      enabled: true
+
+info:
+  app:
+    name: @project.artifactId@
+  build:
+    version: @project.version@
