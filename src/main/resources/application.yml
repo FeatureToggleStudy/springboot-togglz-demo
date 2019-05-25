@@ -18,6 +18,7 @@ endpoints:
     enabled: true
 
 togglz:
+#  enabled value would be coming from system variable as ${isTrue}
 #  enabled: true # Enabled by default
 #  featureEnums:
 #    FeatureToggles

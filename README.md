@@ -1,6 +1,6 @@
 # README #
 
-Spring Boot + Togglz demo accompanying source code
+Spring Boot + Togglz demo
 
 ### Requirements ###
 
@@ -10,7 +10,7 @@ Spring Boot + Togglz demo accompanying source code
 ### Building the artifact ###
 
 ```
-mvn clean package
+mvn clean install
 ```
 
 ### Running the application from command line ###
@@ -28,7 +28,7 @@ curl -v "http://localhost:8080/api/demo-someservice/0"
 ```
 should result in successful responses. 
 
-### Who do I talk to? ###
+### Talk to me ###
 
 * https://hackerstreet.blogspot.in/
 * https://www.linkedin.com/in/vohra01
